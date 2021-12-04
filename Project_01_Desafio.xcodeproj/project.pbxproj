@@ -10,10 +10,10 @@
 		B3AEFD3D6EC01127440300E6 /* Pods_Project_01_Desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F14BB8FBE440EADE7DC1BB /* Pods_Project_01_Desafio.framework */; };
 		D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */; };
 		D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */; };
-		D3B7CAE2275BA077000CDEB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CAE1275BA077000CDEB2 /* ViewController.swift */; };
 		D3B7CAE5275BA077000CDEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE3275BA077000CDEB2 /* Main.storyboard */; };
 		D3B7CAE7275BA079000CDEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */; };
 		D3B7CAEA275BA079000CDEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE8275BA079000CDEB2 /* LaunchScreen.storyboard */; };
+		D3F86CCE275C1DBE00A1A066 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		D3B7CADA275BA077000CDEB2 /* Project_01_Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_01_Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3B7CAE1275BA077000CDEB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3B7CAE4275BA077000CDEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3B7CAE9275BA079000CDEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3B7CAEB275BA079000CDEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		D5F14BB8FBE440EADE7DC1BB /* Pods_Project_01_Desafio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_01_Desafio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F174E7D6EFDC0A94815D1D3B /* Pods-Project_01_Desafio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_01_Desafio.debug.xcconfig"; path = "Target Support Files/Pods-Project_01_Desafio/Pods-Project_01_Desafio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,6 @@
 				F174E7D6EFDC0A94815D1D3B /* Pods-Project_01_Desafio.debug.xcconfig */,
 				7D396C4798F30B7025934A20 /* Pods-Project_01_Desafio.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,10 +82,10 @@
 			children = (
 				D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */,
 				D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */,
-				D3B7CAE1275BA077000CDEB2 /* ViewController.swift */,
 				D3B7CAE3275BA077000CDEB2 /* Main.storyboard */,
 				D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */,
 				D3B7CAE8275BA079000CDEB2 /* LaunchScreen.storyboard */,
+				D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */,
 				D3B7CAEB275BA079000CDEB2 /* Info.plist */,
 			);
 			path = Project_01_Desafio;
@@ -207,8 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3B7CAE2275BA077000CDEB2 /* ViewController.swift in Sources */,
 				D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */,
+				D3F86CCE275C1DBE00A1A066 /* LaunchScreenViewController.swift in Sources */,
 				D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
