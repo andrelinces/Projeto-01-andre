@@ -13,7 +13,8 @@
 		D3B7CAE5275BA077000CDEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE3275BA077000CDEB2 /* Main.storyboard */; };
 		D3B7CAE7275BA079000CDEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */; };
 		D3B7CAEA275BA079000CDEB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE8275BA079000CDEB2 /* LaunchScreen.storyboard */; };
-		D3F86CCE275C1DBE00A1A066 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */; };
+		D3F86CD0275C2A4900A1A066 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */; };
+		D3F86CD2275C2F8A00A1A066 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3B7CAE9275BA079000CDEB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3B7CAEB275BA079000CDEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		D5F14BB8FBE440EADE7DC1BB /* Pods_Project_01_Desafio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_01_Desafio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F174E7D6EFDC0A94815D1D3B /* Pods-Project_01_Desafio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_01_Desafio.debug.xcconfig"; path = "Target Support Files/Pods-Project_01_Desafio/Pods-Project_01_Desafio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,11 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */,
+				D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */,
+				D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */,
 				D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */,
 				D3B7CAE3275BA077000CDEB2 /* Main.storyboard */,
 				D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */,
 				D3B7CAE8275BA079000CDEB2 /* LaunchScreen.storyboard */,
-				D3F86CCD275C1DBE00A1A066 /* LaunchScreenViewController.swift */,
 				D3B7CAEB275BA079000CDEB2 /* Info.plist */,
 			);
 			path = Project_01_Desafio;
@@ -206,9 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F86CD0275C2A4900A1A066 /* InitialViewController.swift in Sources */,
 				D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */,
-				D3F86CCE275C1DBE00A1A066 /* LaunchScreenViewController.swift in Sources */,
 				D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */,
+				D3F86CD2275C2F8A00A1A066 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
