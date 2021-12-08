@@ -51,4 +51,32 @@ class CategoriesTableViewController: UITableViewController {
       return cell
     }
     
+    //Método para tratar o clique no snap escolhido e enviar para o usuário para o detalhe do snap.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let categoriesList = responseArray.count
+        //teste para verificar se existe algum snap para o usuário logado.
+        if categoriesList > 0 {
+            //montando o snap
+            let category = self.responseArray [ indexPath.row ]
+            //enviando o usuário para o detalhe do snap selecionado.
+            self.performSegue(withIdentifier: "segueJokes", sender: category)
+            
+        }
+        
+        
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "segueJokes" {
+//
+//            let detalhesSnapViewController = segue.destination as! DetalhesSnapViewController
+//
+//            //enviando os detalhes do snap para a view SnapsDetalhesController
+//            detalhesSnapViewController.snap = sender as! Snaps
+//        }
+//
+//    }
+    
 }

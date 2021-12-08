@@ -65,10 +65,42 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Categories" id="GrJ-y8-Q3r"/>
+                    <connections>
+                        <segue destination="NMc-vP-20U" kind="show" identifier="segueJokes" id="B4u-lw-6gc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kb-Z5-d68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="98.4375"/>
+        </scene>
+        <!--Jokes View Controller-->
+        <scene sceneID="9aV-k4-nbl">
+            <objects>
+                <viewController id="NMc-vP-20U" customClass="JokesViewController" customModule="Project_01_Desafio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q1b-rW-Gp0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haH-oM-Wo2">
+                                <rect key="frame" x="51" y="249" width="313" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNq-gX-cmb">
+                                <rect key="frame" x="150" y="109" width="114" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDG-QS-T8H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WK6-8E-Rpi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iu2-mu-7sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095.6521739130435" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L7Y-mG-Gye">

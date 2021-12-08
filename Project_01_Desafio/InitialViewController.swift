@@ -13,7 +13,6 @@ class InitialViewController: UIViewController {
     
     @IBOutlet weak var initialImage: UIImageView!
     
-    @IBOutlet weak var initialButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
