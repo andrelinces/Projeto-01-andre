@@ -7,10 +7,13 @@
 
 import UIKit
 import Alamofire
+import AVFAudio
 
 class CategoriesTableViewController: UITableViewController {
     
     var responseArray: NSArray = []
+    
+    var categorySelect : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,25 +63,28 @@ class CategoriesTableViewController: UITableViewController {
             //montando o snap
             let category = self.responseArray [ indexPath.row ]
             //enviando o usuário para o detalhe do snap selecionado.
-            self.performSegue(withIdentifier: "segueJokes", sender: category)
+            
+            self.categorySelect = "\(category)"
+            
+            self.performSegue(withIdentifier: "segueJokes", sender: nil)
             
             print("test category didselect: \(category)")
             
         }
-        
-        
+          
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == "segueJokes" {
-//
-//            let detalhesSnapViewController = segue.destination as! DetalhesSnapViewController
-//
-//            //enviando os detalhes do snap para a view SnapsDetalhesController
-//            detalhesSnapViewController.snap = sender as! Snaps
-//        }
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "segueJokes" {
+
+            let jokesViewController = segue.destination as? JokesViewController
+
+            //enviando os detalhes do snap para a view SnapsDetalhesController
+            jokesViewController?.initialize(category: self.categorySelect)
+            print("test prepare: \(jokesViewController)")
+        }
+         
+    }
     
 }

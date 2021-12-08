@@ -24,8 +24,7 @@ class ModelChuckJokes: Codable {
     var id : String
     var updated_at : String
     var url : String
-    var value : String
-     
+    var value : String 
 }
 
 

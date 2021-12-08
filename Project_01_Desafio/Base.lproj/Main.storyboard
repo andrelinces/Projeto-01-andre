@@ -81,20 +81,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haH-oM-Wo2">
-                                <rect key="frame" x="51" y="249" width="313" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haH-oM-Wo2">
+                                <rect key="frame" x="50" y="249" width="314" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNq-gX-cmb">
-                                <rect key="frame" x="150" y="109" width="114" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNq-gX-cmb">
+                                <rect key="frame" x="150" y="110" width="114" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="2T2-Jl-hRT"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDG-QS-T8H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDG-QS-T8H" firstAttribute="trailing" secondItem="haH-oM-Wo2" secondAttribute="trailing" constant="50" id="8js-9P-aMp"/>
+                            <constraint firstItem="haH-oM-Wo2" firstAttribute="leading" secondItem="vDG-QS-T8H" secondAttribute="leading" constant="50" id="U7U-qh-3Wf"/>
+                            <constraint firstItem="vDG-QS-T8H" firstAttribute="trailing" secondItem="bNq-gX-cmb" secondAttribute="trailing" constant="150" id="WNj-mv-AcS"/>
+                            <constraint firstItem="bNq-gX-cmb" firstAttribute="top" secondItem="vDG-QS-T8H" secondAttribute="top" constant="22" id="oL0-5J-cWN"/>
+                            <constraint firstItem="haH-oM-Wo2" firstAttribute="top" secondItem="bNq-gX-cmb" secondAttribute="bottom" constant="29" id="vG0-qH-9oz"/>
+                            <constraint firstItem="bNq-gX-cmb" firstAttribute="leading" secondItem="vDG-QS-T8H" secondAttribute="leading" constant="150" id="xOG-pf-ARx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WK6-8E-Rpi"/>
                     <connections>

@@ -17,18 +17,47 @@ class JokesViewController: UIViewController {
     
     var url = "https://api.chucknorris.io/jokes/random"
     
+    var categorySelect : String = ""
+    
+    func initialize (category : String) {
+        
+        self.categorySelect = category
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Donwload image and display in initial screen
+        //Donwload image and display in JokesViemController screen
         let url = URL(string: "https://assets.chucknorris.host/img/avatar/chuck-norris.png")
         // this downloads the image asynchronously if it's not cached yet
         imageJokes.kf.setImage(with: url)
         
-        
+        //Retrieves data JSON using alamofire api for to add objects.
+        AF.request("https://api.chucknorris.io/jokes/random?category=" + categorySelect).responseJSON { response in
+            if let json = response.data {
+       
+                let joke = JokesViewController.getModelJokes(jokes_config_list: json)
+                
+                print("test json: \(joke.id)")
+                print("test json: \(joke.url)")
+                print("test json: \(joke.created_at)")
+                print("test json: \(joke.value)")
+                
+                self.labelJokes.text = joke.value 
+                
+            }
+            
+        }
     }
-    
-    
-    
-    
+    static func getModelJokes(jokes_config_list : Data) -> ModelChuckJokes {
+        
+        //Parsing the data
+        
+        let decoder = JSONDecoder()
+        let parsedData = try! decoder.decode(ModelChuckJokes.self, from: jokes_config_list )
+        
+       return parsedData
+    }
+       
 }
