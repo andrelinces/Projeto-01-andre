@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3AEFD3D6EC01127440300E6 /* Pods_Project_01_Desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F14BB8FBE440EADE7DC1BB /* Pods_Project_01_Desafio.framework */; };
+		D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A618882760418F00939B8A /* ModelChuckJokes.swift */; };
+		D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6188A276041FC00939B8A /* JokesViewController.swift */; };
 		D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */; };
 		D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */; };
 		D3B7CAE5275BA077000CDEB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B7CAE3275BA077000CDEB2 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		7D396C4798F30B7025934A20 /* Pods-Project_01_Desafio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_01_Desafio.release.xcconfig"; path = "Target Support Files/Pods-Project_01_Desafio/Pods-Project_01_Desafio.release.xcconfig"; sourceTree = "<group>"; };
+		D3A618882760418F00939B8A /* ModelChuckJokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelChuckJokes.swift; path = /Users/andrelinces/Documents/Projetos_iOS/Project_01_Desafio/Project_01_Desafio/ModelChuckJokes.swift; sourceTree = "<absolute>"; };
+		D3A6188A276041FC00939B8A /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		D3B7CADA275BA077000CDEB2 /* Project_01_Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_01_Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			children = (
 				D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */,
 				D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */,
+				D3A618882760418F00939B8A /* ModelChuckJokes.swift */,
+				D3A6188A276041FC00939B8A /* JokesViewController.swift */,
 				D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */,
 				D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */,
 				D3B7CAE3275BA077000CDEB2 /* Main.storyboard */,
@@ -210,7 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F86CD0275C2A4900A1A066 /* InitialViewController.swift in Sources */,
+				D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */,
 				D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */,
+				D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */,
 				D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */,
 				D3F86CD2275C2F8A00A1A066 /* CategoriesTableViewController.swift in Sources */,
 			);
