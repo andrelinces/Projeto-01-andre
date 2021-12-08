@@ -19,6 +19,7 @@ class JokesViewController: UIViewController {
     
     var categorySelect : String = ""
     
+    //Func to how receives category select in tableview
     func initialize (category : String) {
         
         self.categorySelect = category
@@ -44,12 +45,13 @@ class JokesViewController: UIViewController {
                 print("test json: \(joke.created_at)")
                 print("test json: \(joke.value)")
                 
-                self.labelJokes.text = joke.value 
+                self.labelJokes.text = joke.value
                 
             }
             
         }
     }
+    //Model function to decode JSON data and be able to manipulate the objects.
     static func getModelJokes(jokes_config_list : Data) -> ModelChuckJokes {
         
         //Parsing the data

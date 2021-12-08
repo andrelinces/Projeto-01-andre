@@ -11,8 +11,9 @@ import AVFAudio
 
 class CategoriesTableViewController: UITableViewController {
     
+    //Variable for received list of the JSON
     var responseArray: NSArray = []
-    
+    //Variable how receive use in initializer
     var categorySelect : String = ""
     
     override func viewDidLoad() {
@@ -44,30 +45,27 @@ class CategoriesTableViewController: UITableViewController {
         
         // Configure the cell...
                 let categories = responseArray[indexPath.row]
-                //let artistName = (whichCategories as AnyObject)["artistName"] as? String
-        
+               
                 cell.textLabel?.text = categories as? String
-        
-        //        cell.textLabel?.text = [categories] as? String
-        //cell.textLabel?.text = "https://api.chucknorris.io/jokes/categories"
         
       return cell
     }
     
-    //Método para tratar o clique no snap escolhido e enviar para o usuário para o detalhe do snap.
+    //Method how to identifier the select cell.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let categoriesList = responseArray.count
-        //teste para verificar se existe algum snap para o usuário logado.
+        
+        //Testing if exists Any category in list of the tableview
         if categoriesList > 0 {
-            //montando o snap
+            
             let category = self.responseArray [ indexPath.row ]
             //enviando o usuário para o detalhe do snap selecionado.
             
             self.categorySelect = "\(category)"
             
             self.performSegue(withIdentifier: "segueJokes", sender: nil)
-            
+            //Prints to test whether the selected category has been identified.
             print("test category didselect: \(category)")
             
         }
@@ -80,7 +78,7 @@ class CategoriesTableViewController: UITableViewController {
 
             let jokesViewController = segue.destination as? JokesViewController
 
-            //enviando os detalhes do snap para a view SnapsDetalhesController
+            //Send the data to the JokesViewController
             jokesViewController?.initialize(category: self.categorySelect)
             print("test prepare: \(jokesViewController)")
         }
