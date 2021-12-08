@@ -62,6 +62,8 @@ class CategoriesTableViewController: UITableViewController {
             //enviando o usuário para o detalhe do snap selecionado.
             self.performSegue(withIdentifier: "segueJokes", sender: category)
             
+            print("test category didselect: \(category)")
+            
         }
         
         
