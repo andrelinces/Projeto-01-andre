@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="98.4375"/>
         </scene>
-        <!--Jokes View Controller-->
+        <!--Loading...-->
         <scene sceneID="9aV-k4-nbl">
             <objects>
                 <viewController id="NMc-vP-20U" customClass="JokesViewController" customModule="Project_01_Desafio" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,10 +105,11 @@
                             <constraint firstItem="bNq-gX-cmb" firstAttribute="leading" secondItem="vDG-QS-T8H" secondAttribute="leading" constant="150" id="xOG-pf-ARx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WK6-8E-Rpi"/>
+                    <navigationItem key="navigationItem" title="Loading..." id="UtG-Wr-CSe"/>
                     <connections>
                         <outlet property="imageJokes" destination="bNq-gX-cmb" id="ghg-RO-GFw"/>
                         <outlet property="labelJokes" destination="haH-oM-Wo2" id="hTE-sE-NxD"/>
+                        <outlet property="navigationJoke" destination="UtG-Wr-CSe" id="qY1-Jb-gwj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iu2-mu-7sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

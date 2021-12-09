@@ -15,6 +15,8 @@ class JokesViewController: UIViewController {
     
     @IBOutlet weak var labelJokes: UILabel!
     
+    @IBOutlet weak var navigationJoke: UINavigationItem!
+    
     var url = "https://api.chucknorris.io/jokes/random"
     
     var categorySelect : String = ""
@@ -46,7 +48,7 @@ class JokesViewController: UIViewController {
                 print("test json: \(joke.value)")
                 
                 self.labelJokes.text = joke.value
-                
+                self.navigationJoke.title = (self.categorySelect)
             }
             
         }
