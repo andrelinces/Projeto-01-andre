@@ -65,6 +65,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D331D225276385C1004324D6 /* GlobalHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D331D2262763860F004324D6 /* GlobalProtocol */,
+				D331D2272763862B004324D6 /* GlobalExtension */,
+				D331D2282763863D004324D6 /* GlobalMethods */,
+			);
+			path = GlobalHelpers;
+			sourceTree = "<group>";
+		};
+		D331D2262763860F004324D6 /* GlobalProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GlobalProtocol;
+			sourceTree = "<group>";
+		};
+		D331D2272763862B004324D6 /* GlobalExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GlobalExtension;
+			sourceTree = "<group>";
+		};
+		D331D2282763863D004324D6 /* GlobalMethods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GlobalMethods;
+			sourceTree = "<group>";
+		};
 		D3B7CAD1275BA077000CDEB2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +117,7 @@
 		D3B7CADC275BA077000CDEB2 /* Project_01_Desafio */ = {
 			isa = PBXGroup;
 			children = (
+				D331D225276385C1004324D6 /* GlobalHelpers */,
 				D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */,
 				D3A618882760418F00939B8A /* ModelChuckJokes.swift */,
 				D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */,
