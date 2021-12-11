@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B3AEFD3D6EC01127440300E6 /* Pods_Project_01_Desafio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F14BB8FBE440EADE7DC1BB /* Pods_Project_01_Desafio.framework */; };
+		D331D22F2764C8AD004324D6 /* GlobalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D22E2764C8AD004324D6 /* GlobalProtocol.swift */; };
+		D331D2312764C904004324D6 /* GlobalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D2302764C904004324D6 /* GlobalExtension.swift */; };
+		D331D23327654EF2004324D6 /* Card1ModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D331D23227654EF2004324D6 /* Card1ModelCell.xib */; };
+		D331D23527654F06004324D6 /* Card1ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23427654F06004324D6 /* Card1ModelCell.swift */; };
+		D331D23727654F30004324D6 /* Card1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23627654F30004324D6 /* Card1Model.swift */; };
 		D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A618882760418F00939B8A /* ModelChuckJokes.swift */; };
 		D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6188A276041FC00939B8A /* JokesViewController.swift */; };
 		D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */; };
@@ -21,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		7D396C4798F30B7025934A20 /* Pods-Project_01_Desafio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_01_Desafio.release.xcconfig"; path = "Target Support Files/Pods-Project_01_Desafio/Pods-Project_01_Desafio.release.xcconfig"; sourceTree = "<group>"; };
+		D331D22E2764C8AD004324D6 /* GlobalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProtocol.swift; sourceTree = "<group>"; };
+		D331D2302764C904004324D6 /* GlobalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalExtension.swift; sourceTree = "<group>"; };
+		D331D23227654EF2004324D6 /* Card1ModelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card1ModelCell.xib; sourceTree = "<group>"; };
+		D331D23427654F06004324D6 /* Card1ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1ModelCell.swift; sourceTree = "<group>"; };
+		D331D23627654F30004324D6 /* Card1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1Model.swift; sourceTree = "<group>"; };
 		D3A618882760418F00939B8A /* ModelChuckJokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelChuckJokes.swift; path = /Users/andrelinces/Documents/Projetos_iOS/Project_01_Desafio/Project_01_Desafio/ModelChuckJokes.swift; sourceTree = "<absolute>"; };
 		D3A6188A276041FC00939B8A /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		D3B7CADA275BA077000CDEB2 /* Project_01_Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_01_Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +88,7 @@
 		D331D2262763860F004324D6 /* GlobalProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				D331D22E2764C8AD004324D6 /* GlobalProtocol.swift */,
 			);
 			path = GlobalProtocol;
 			sourceTree = "<group>";
@@ -85,6 +96,7 @@
 		D331D2272763862B004324D6 /* GlobalExtension */ = {
 			isa = PBXGroup;
 			children = (
+				D331D2302764C904004324D6 /* GlobalExtension.swift */,
 			);
 			path = GlobalExtension;
 			sourceTree = "<group>";
@@ -94,6 +106,50 @@
 			children = (
 			);
 			path = GlobalMethods;
+			sourceTree = "<group>";
+		};
+		D331D229276389A2004324D6 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D331D22A276389F9004324D6 /* Principal */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		D331D22A276389F9004324D6 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				D331D22B27638D4F004324D6 /* Card1ViewController */,
+			);
+			path = Principal;
+			sourceTree = "<group>";
+		};
+		D331D22B27638D4F004324D6 /* Card1ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D331D22C27638D61004324D6 /* TableViewController */,
+			);
+			path = Card1ViewController;
+			sourceTree = "<group>";
+		};
+		D331D22C27638D61004324D6 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D3A6188A276041FC00939B8A /* JokesViewController.swift */,
+				D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */,
+				D331D22D27638D77004324D6 /* ModelCells */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		D331D22D27638D77004324D6 /* ModelCells */ = {
+			isa = PBXGroup;
+			children = (
+				D331D23227654EF2004324D6 /* Card1ModelCell.xib */,
+				D331D23427654F06004324D6 /* Card1ModelCell.swift */,
+				D331D23627654F30004324D6 /* Card1Model.swift */,
+			);
+			path = ModelCells;
 			sourceTree = "<group>";
 		};
 		D3B7CAD1275BA077000CDEB2 = {
@@ -118,11 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				D331D225276385C1004324D6 /* GlobalHelpers */,
+				D331D229276389A2004324D6 /* Sections */,
 				D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */,
 				D3A618882760418F00939B8A /* ModelChuckJokes.swift */,
 				D3F86CD1275C2F8A00A1A066 /* CategoriesTableViewController.swift */,
-				D3A6188A276041FC00939B8A /* JokesViewController.swift */,
-				D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */,
 				D3B7CADF275BA077000CDEB2 /* SceneDelegate.swift */,
 				D3B7CAE3275BA077000CDEB2 /* Main.storyboard */,
 				D3B7CAE6275BA079000CDEB2 /* Assets.xcassets */,
@@ -195,6 +250,7 @@
 				D3B7CAEA275BA079000CDEB2 /* LaunchScreen.storyboard in Resources */,
 				D3B7CAE7275BA079000CDEB2 /* Assets.xcassets in Resources */,
 				D3B7CAE5275BA077000CDEB2 /* Main.storyboard in Resources */,
+				D331D23327654EF2004324D6 /* Card1ModelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +306,12 @@
 				D3F86CD0275C2A4900A1A066 /* InitialViewController.swift in Sources */,
 				D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */,
 				D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */,
+				D331D23527654F06004324D6 /* Card1ModelCell.swift in Sources */,
 				D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */,
 				D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */,
+				D331D22F2764C8AD004324D6 /* GlobalProtocol.swift in Sources */,
+				D331D23727654F30004324D6 /* Card1Model.swift in Sources */,
+				D331D2312764C904004324D6 /* GlobalExtension.swift in Sources */,
 				D3F86CD2275C2F8A00A1A066 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
