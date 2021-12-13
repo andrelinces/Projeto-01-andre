@@ -9,27 +9,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="Jbw-wJ-Uhx">
-            <rect key="frame" x="0.0" y="0.0" width="412" height="65"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Card1ModelCellIdentifier" rowHeight="103" id="Jbw-wJ-Uhx" customClass="Card1ModelCell" customModule="Project_01_Desafio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="103"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jbw-wJ-Uhx" id="nhZ-Zc-doC">
-                <rect key="frame" x="0.0" y="0.0" width="412" height="65"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jbw-wJ-Uhx" id="nhZ-Zc-doC">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="103"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfg-kf-IFX">
-                        <rect key="frame" x="0.0" y="0.0" width="412" height="65"/>
+                        <rect key="frame" x="0.0" y="0.0" width="418" height="100"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-Ys-2br">
-                                <rect key="frame" x="5" y="5" width="402" height="55"/>
+                                <rect key="frame" x="12" y="0.0" width="394" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0n-0l-nb8">
-                                        <rect key="frame" x="17" y="17" width="75" height="21"/>
+                                        <rect key="frame" x="17" y="17" width="75" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzh-jO-ifv">
-                                        <rect key="frame" x="109" y="17" width="77" height="21"/>
+                                        <rect key="frame" x="109" y="17" width="77" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -40,18 +40,20 @@
                                     <constraint firstItem="n0n-0l-nb8" firstAttribute="top" secondItem="HpN-Ys-2br" secondAttribute="top" constant="17" id="3wD-Cb-0ew"/>
                                     <constraint firstAttribute="bottom" secondItem="n0n-0l-nb8" secondAttribute="bottom" constant="17" id="C33-nc-7cN"/>
                                     <constraint firstItem="tzh-jO-ifv" firstAttribute="leading" secondItem="n0n-0l-nb8" secondAttribute="trailing" constant="17" id="Ua2-np-xyF"/>
+                                    <constraint firstAttribute="height" constant="84" id="XCK-h8-OP4"/>
                                     <constraint firstAttribute="bottom" secondItem="tzh-jO-ifv" secondAttribute="bottom" constant="17" id="kcm-Gj-Lz7"/>
                                     <constraint firstItem="n0n-0l-nb8" firstAttribute="leading" secondItem="HpN-Ys-2br" secondAttribute="leading" constant="17" id="tS2-58-QXA"/>
                                     <constraint firstItem="tzh-jO-ifv" firstAttribute="top" secondItem="HpN-Ys-2br" secondAttribute="top" constant="17" id="ygr-fH-oas"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HpN-Ys-2br" firstAttribute="top" secondItem="Dfg-kf-IFX" secondAttribute="top" constant="5" id="12K-0U-YK5"/>
-                            <constraint firstAttribute="bottom" secondItem="HpN-Ys-2br" secondAttribute="bottom" constant="5" id="Bpr-Ic-ajg"/>
-                            <constraint firstItem="HpN-Ys-2br" firstAttribute="leading" secondItem="Dfg-kf-IFX" secondAttribute="leading" constant="5" id="TIN-0b-iU8"/>
-                            <constraint firstAttribute="trailing" secondItem="HpN-Ys-2br" secondAttribute="trailing" constant="5" id="zzC-g2-29N"/>
+                            <constraint firstItem="HpN-Ys-2br" firstAttribute="top" secondItem="Dfg-kf-IFX" secondAttribute="top" id="12K-0U-YK5"/>
+                            <constraint firstAttribute="bottom" secondItem="HpN-Ys-2br" secondAttribute="bottom" constant="16" id="Bpr-Ic-ajg"/>
+                            <constraint firstAttribute="height" constant="100" id="FKY-yd-LlN"/>
+                            <constraint firstItem="HpN-Ys-2br" firstAttribute="leading" secondItem="Dfg-kf-IFX" secondAttribute="leading" constant="12" id="TIN-0b-iU8"/>
+                            <constraint firstAttribute="trailing" secondItem="HpN-Ys-2br" secondAttribute="trailing" constant="12" id="zzC-g2-29N"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -62,7 +64,13 @@
                     <constraint firstAttribute="trailing" secondItem="Dfg-kf-IFX" secondAttribute="trailing" id="pPc-Bx-XsN"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="327.536231884058" y="32.477678571428569"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="card1View" destination="HpN-Ys-2br" id="257-wN-LcD"/>
+                <outlet property="labelDescricaoCard1" destination="tzh-jO-ifv" id="JFx-Jz-n91"/>
+                <outlet property="labelTituloCard1" destination="n0n-0l-nb8" id="QeO-ih-XYT"/>
+            </connections>
+            <point key="canvasLocation" x="323.1884057971015" y="45.200892857142854"/>
         </tableViewCell>
     </objects>
     <resources>

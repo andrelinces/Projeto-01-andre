@@ -13,6 +13,6 @@ protocol tableViewCompatible {
     var reuseIdentifier : String {get}
     
     func cellForTableView ( tableView: UITableView, atIndexpath indexpath: IndexPath ) -> UITableViewCell
-    
+
 }
 

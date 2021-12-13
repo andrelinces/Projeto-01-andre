@@ -34,12 +34,12 @@
                     <navigationItem key="navigationItem" id="auJ-Zw-Y9H"/>
                     <connections>
                         <outlet property="initialImage" destination="4wd-83-Giv" id="hCL-ZU-OhC"/>
-                        <segue destination="Q4k-l2-GLS" kind="show" identifier="segueTableView" id="5DO-ZR-7vV"/>
+                        <segue destination="oLj-dM-KKj" kind="show" identifier="segueTableView" id="QOL-h6-V6z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247.82608695652175" y="97.767857142857139"/>
+            <point key="canvasLocation" x="219" y="98"/>
         </scene>
         <!--Categories-->
         <scene sceneID="gzj-xp-pkV">
@@ -71,7 +71,39 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kb-Z5-d68" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234.7826086956522" y="98.4375"/>
+            <point key="canvasLocation" x="1138" y="-342"/>
+        </scene>
+        <!--Card1 View Controller-->
+        <scene sceneID="aP5-hx-X5W">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" id="oLj-dM-KKj" customClass="Card1ViewController" customModule="Project_01_Desafio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5On-W5-Ihw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dVJ-wf-FXy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nWn-Aj-8SS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dVJ-wf-FXy" firstAttribute="top" secondItem="5On-W5-Ihw" secondAttribute="top" id="Ivk-Qg-ySb"/>
+                            <constraint firstItem="dVJ-wf-FXy" firstAttribute="leading" secondItem="nWn-Aj-8SS" secondAttribute="leading" id="Lj4-Ui-UHh"/>
+                            <constraint firstItem="nWn-Aj-8SS" firstAttribute="trailing" secondItem="dVJ-wf-FXy" secondAttribute="trailing" id="mY2-NY-zjl"/>
+                            <constraint firstAttribute="bottom" secondItem="dVJ-wf-FXy" secondAttribute="bottom" id="ydp-uc-tvo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CzU-ag-QWr"/>
+                    <connections>
+                        <outlet property="tableView" destination="dVJ-wf-FXy" id="hMX-OG-LfH"/>
+                        <segue destination="NMc-vP-20U" kind="show" identifier="segueJokes" id="UC9-Xu-gjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKW-2F-dQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="384"/>
         </scene>
         <!--Loading...-->
         <scene sceneID="9aV-k4-nbl">
@@ -135,6 +167,9 @@
             <point key="canvasLocation" x="-662.31884057971024" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UC9-Xu-gjg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

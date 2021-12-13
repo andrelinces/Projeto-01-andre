@@ -13,6 +13,10 @@
 		D331D23327654EF2004324D6 /* Card1ModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D331D23227654EF2004324D6 /* Card1ModelCell.xib */; };
 		D331D23527654F06004324D6 /* Card1ModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23427654F06004324D6 /* Card1ModelCell.swift */; };
 		D331D23727654F30004324D6 /* Card1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23627654F30004324D6 /* Card1Model.swift */; };
+		D331D23927655C7F004324D6 /* Card1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23827655C7F004324D6 /* Card1ViewController.swift */; };
+		D331D23B2765617F004324D6 /* Card1DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23A2765617F004324D6 /* Card1DataSource.swift */; };
+		D331D23D27680306004324D6 /* CardTituloModel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D331D23C27680306004324D6 /* CardTituloModel.xib */; };
+		D331D23F276809B1004324D6 /* CardTituloModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D23E276809B1004324D6 /* CardTituloModelCell.swift */; };
 		D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A618882760418F00939B8A /* ModelChuckJokes.swift */; };
 		D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A6188A276041FC00939B8A /* JokesViewController.swift */; };
 		D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B7CADD275BA077000CDEB2 /* AppDelegate.swift */; };
@@ -31,6 +35,10 @@
 		D331D23227654EF2004324D6 /* Card1ModelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Card1ModelCell.xib; sourceTree = "<group>"; };
 		D331D23427654F06004324D6 /* Card1ModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1ModelCell.swift; sourceTree = "<group>"; };
 		D331D23627654F30004324D6 /* Card1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1Model.swift; sourceTree = "<group>"; };
+		D331D23827655C7F004324D6 /* Card1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1ViewController.swift; sourceTree = "<group>"; };
+		D331D23A2765617F004324D6 /* Card1DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card1DataSource.swift; sourceTree = "<group>"; };
+		D331D23C27680306004324D6 /* CardTituloModel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTituloModel.xib; sourceTree = "<group>"; };
+		D331D23E276809B1004324D6 /* CardTituloModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTituloModelCell.swift; sourceTree = "<group>"; };
 		D3A618882760418F00939B8A /* ModelChuckJokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModelChuckJokes.swift; path = /Users/andrelinces/Documents/Projetos_iOS/Project_01_Desafio/Project_01_Desafio/ModelChuckJokes.swift; sourceTree = "<absolute>"; };
 		D3A6188A276041FC00939B8A /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		D3B7CADA275BA077000CDEB2 /* Project_01_Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_01_Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +146,8 @@
 				D3A6188A276041FC00939B8A /* JokesViewController.swift */,
 				D3F86CCF275C2A4900A1A066 /* InitialViewController.swift */,
 				D331D22D27638D77004324D6 /* ModelCells */,
+				D331D23827655C7F004324D6 /* Card1ViewController.swift */,
+				D331D23A2765617F004324D6 /* Card1DataSource.swift */,
 			);
 			path = TableViewController;
 			sourceTree = "<group>";
@@ -145,8 +155,10 @@
 		D331D22D27638D77004324D6 /* ModelCells */ = {
 			isa = PBXGroup;
 			children = (
+				D331D23C27680306004324D6 /* CardTituloModel.xib */,
 				D331D23227654EF2004324D6 /* Card1ModelCell.xib */,
 				D331D23427654F06004324D6 /* Card1ModelCell.swift */,
+				D331D23E276809B1004324D6 /* CardTituloModelCell.swift */,
 				D331D23627654F30004324D6 /* Card1Model.swift */,
 			);
 			path = ModelCells;
@@ -251,6 +263,7 @@
 				D3B7CAE7275BA079000CDEB2 /* Assets.xcassets in Resources */,
 				D3B7CAE5275BA077000CDEB2 /* Main.storyboard in Resources */,
 				D331D23327654EF2004324D6 /* Card1ModelCell.xib in Resources */,
+				D331D23D27680306004324D6 /* CardTituloModel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,12 +317,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F86CD0275C2A4900A1A066 /* InitialViewController.swift in Sources */,
+				D331D23F276809B1004324D6 /* CardTituloModelCell.swift in Sources */,
 				D3A6188B276041FC00939B8A /* JokesViewController.swift in Sources */,
+				D331D23B2765617F004324D6 /* Card1DataSource.swift in Sources */,
 				D3B7CADE275BA077000CDEB2 /* AppDelegate.swift in Sources */,
 				D331D23527654F06004324D6 /* Card1ModelCell.swift in Sources */,
 				D3A618892760418F00939B8A /* ModelChuckJokes.swift in Sources */,
 				D3B7CAE0275BA077000CDEB2 /* SceneDelegate.swift in Sources */,
 				D331D22F2764C8AD004324D6 /* GlobalProtocol.swift in Sources */,
+				D331D23927655C7F004324D6 /* Card1ViewController.swift in Sources */,
 				D331D23727654F30004324D6 /* Card1Model.swift in Sources */,
 				D331D2312764C904004324D6 /* GlobalExtension.swift in Sources */,
 				D3F86CD2275C2F8A00A1A066 /* CategoriesTableViewController.swift in Sources */,
