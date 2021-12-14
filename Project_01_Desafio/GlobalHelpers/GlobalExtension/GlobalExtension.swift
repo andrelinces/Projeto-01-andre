@@ -25,7 +25,7 @@ extension UIView {
         
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
         
-        self.layer.shadowOpacity = 0.3
+        self.layer.shadowOpacity = 0.2
         
     }
     

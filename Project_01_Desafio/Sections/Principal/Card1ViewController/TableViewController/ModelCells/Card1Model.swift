@@ -16,6 +16,7 @@ protocol Card1ModelCallBack: class {
 class Card1Model: tableViewCompatible {
     
     internal init(delegate: Card1ModelCallBack?, tituloCard1: String, descricaoCard1: String) {
+        self.delegate = delegate
         self.tituloCard1 = tituloCard1
         self.descricaoCard1 = descricaoCard1
     }

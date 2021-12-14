@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="418" height="100"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-Ys-2br">
-                                <rect key="frame" x="12" y="0.0" width="394" height="84"/>
+                                <rect key="frame" x="12" y="8" width="394" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0n-0l-nb8">
                                         <rect key="frame" x="17" y="17" width="75" height="50"/>
@@ -49,8 +49,8 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HpN-Ys-2br" firstAttribute="top" secondItem="Dfg-kf-IFX" secondAttribute="top" id="12K-0U-YK5"/>
-                            <constraint firstAttribute="bottom" secondItem="HpN-Ys-2br" secondAttribute="bottom" constant="16" id="Bpr-Ic-ajg"/>
+                            <constraint firstItem="HpN-Ys-2br" firstAttribute="top" secondItem="Dfg-kf-IFX" secondAttribute="top" constant="8" id="12K-0U-YK5"/>
+                            <constraint firstAttribute="bottom" secondItem="HpN-Ys-2br" secondAttribute="bottom" constant="8" id="Bpr-Ic-ajg"/>
                             <constraint firstAttribute="height" constant="100" id="FKY-yd-LlN"/>
                             <constraint firstItem="HpN-Ys-2br" firstAttribute="leading" secondItem="Dfg-kf-IFX" secondAttribute="leading" constant="12" id="TIN-0b-iU8"/>
                             <constraint firstAttribute="trailing" secondItem="HpN-Ys-2br" secondAttribute="trailing" constant="12" id="zzC-g2-29N"/>

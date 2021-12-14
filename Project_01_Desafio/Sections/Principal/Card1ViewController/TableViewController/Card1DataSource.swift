@@ -20,12 +20,13 @@ class Card1DataSource: NSObject {
         
         //Registing the cards and cells
         tableView.register(UINib(nibName: "Card1ModelCell", bundle: Bundle.main), forCellReuseIdentifier: "Card1ModelCellIdentifier")
+        tableView.register(UINib(nibName: "CardTitleModelCell", bundle: Bundle.main), forCellReuseIdentifier: "CardTitleModelCellIdentifier")
         
     }
 }
 
 extension Card1DataSource: UITableViewDataSource, UITableViewDelegate {
-
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("Scroll contentOffSet: \(scrollView.contentOffset.y)")
         if scrollView.contentOffset.y > 10 {
@@ -45,9 +46,13 @@ extension Card1DataSource: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if let card1Model = data[ indexPath.row ] as? Card1Model {
+        if let card1Model = data[indexPath.row] as? Card1Model {
             
             return card1Model.cellForTableView(tableView: tableView, atIndexpath: indexPath)
+            
+        }else if let cardTitleModel = data[indexPath.row] as? CardTitleModel {
+            
+            return cardTitleModel.cellForTableView(tableView: tableView, atIndexpath: indexPath)
             
         }else{
             
