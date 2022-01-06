@@ -59,7 +59,7 @@ class CategoriesTableViewController: UITableViewController {
         //Testing if exists Any category in list of the tableview
         if categoriesList > 0 {
             
-            let category = self.responseArray [ indexPath.row ]
+            let category = self.responseArray [indexPath.row]
             //enviando o usuário para o detalhe do snap selecionado.
             
             self.categorySelect = "\(category)"

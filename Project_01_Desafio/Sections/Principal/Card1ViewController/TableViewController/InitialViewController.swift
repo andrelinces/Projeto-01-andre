@@ -25,6 +25,13 @@ class InitialViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         initialImage.isUserInteractionEnabled = true
         initialImage.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        //initialImage.shakeImage(4.0)
+        self.initialImage.shakeTest(0.2)
+        //self.initialImage.rotate()
+        print("Test shake: ")
+        
     }
     //send user for JokesViewController when click to image.
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)

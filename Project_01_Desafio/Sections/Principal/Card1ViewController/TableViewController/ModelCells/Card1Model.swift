@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol Card1ModelCallBack: class {
     
@@ -13,7 +14,7 @@ protocol Card1ModelCallBack: class {
     
 }
 
-class Card1Model: tableViewCompatible {
+class Card1Model: tableViewCompatible  {
     
     internal init(delegate: Card1ModelCallBack?, tituloCard1: String, descricaoCard1: String) {
         self.delegate = delegate
@@ -24,7 +25,7 @@ class Card1Model: tableViewCompatible {
     open weak var delegate : Card1ModelCallBack?
     
     var tituloCard1 :  String
-    var descricaoCard1 : String
+    var descricaoCard1 : String 
     
     var reuseIdentifier: String {
         

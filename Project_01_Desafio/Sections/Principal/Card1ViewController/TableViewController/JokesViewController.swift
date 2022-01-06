@@ -49,9 +49,11 @@ class JokesViewController: UIViewController {
                 
                 self.labelJokes.text = joke.value
                 self.navigationJoke.title = (self.categorySelect)
+                
             }
             
         }
+       
     }
     //Model function to decode JSON data and be able to manipulate the objects.
     static func getModelJokes(jokes_config_list : Data) -> ModelChuckJokes {
